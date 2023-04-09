@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monserrat", "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #01152a;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #001f3f;
+  box-shadow: 0 0 0.7rem #72cbff;
+  padding: 0.4rem;
+}
+
+.logo {
+  width: 15rem;
+  margin-left: 2rem;
+}
+
+.sideNav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  color: white;
+  margin-right: 10rem;
+}
+
+li:hover {
+  color: #0074e4;
+}
+
+.togglerButton {
+  top: 0.75rem;
+  margin-right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 26px;
+  align-self: center;
+}
+
+.bar {
+  background-color: white;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+}
+
+/* nav ends */
+
+/* hero begins */
+.Hero {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.4rem;
+}
+
+.Profile {
+  width: 30rem;
+}
+
+.details {
+  display: block;
+  gap: 2.5em;
+}
+.description {
+  font-size: 1rem;
+  color: white;
+  width: 35rem;
+  margin-top: 0.5rem;
+}
+.namePreffix {
+  font-size: 2rem;
+  color: white;
+}
+
+.nameSuffix {
+  font-size: 2rem;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #0074e4;
+}
+
+.mailButton {
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  color: white;
+  background-color: #0074e4;
+  margin-top: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.mailButton:hover {
+  background: none;
+  border: 2px solid #0074e4;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 6rem;
+  gap: 1rem;
+}
+
+.socials p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.socialHandles {
+  width: 2rem;
+  margin: 0.08rem;
+}
+
+@media (max-width: 720px) {
+  .togglerButton {
+    top: 0.75rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 26px;
+    align-self: center;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #001f3f;
+    box-shadow: 0 0 0.7rem #72cbff;
+    padding: 0.4rem;
+  }
+
+  .logo {
+    width: 10rem;
+    margin-left: 0.7rem;
+  }
+
+  .sideNav ul {
+    list-style: none;
+    display: none;
+    gap: 4rem;
+    color: white;
+    margin-right: 10rem;
+  }
+
+  .sideNav ul.active {
+    display: block;
+  }
+
+  /* nav ends */
+
+  /* hero begins */
+  .Hero {
+    margin: 0.7rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.4rem;
+  }
+
+  .Profile {
+    width: 25rem;
+  }
+
+  .details {
+    display: block;
+    gap: 2.5em;
+    /* justify-content: space-between; */
+  }
+  .description {
+    font-size: 1rem;
+    color: white;
+    width: 95%;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  .namePreffix {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .nameSuffix {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #0074e4;
+  }
+
+  .mailButton {
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    color: white;
+    background-color: #0074e4;
+    margin-top: 1.2rem;
+    border-radius: 0.5rem;
+  }
+
+  .mailButton:hover {
+    background: none;
+    border: 2px solid #0074e4;
+    color: white;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;
+    gap: 1rem;
+  }
+
+  .socials p {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .socialHandles {
+    width: 2rem;
+    margin: 0.08rem;
+  }
+}
